@@ -6,10 +6,10 @@ function checkForSpam(message) {
 
   for (const word of forbiddenWords) {
     if (lowerCaseMessage.includes(word)) {
-      return "true";
+      return true;
     }
     }
-        return "false";
+        return false;
 }
 
 console.log(checkForSpam("Latest technology news")); // false
